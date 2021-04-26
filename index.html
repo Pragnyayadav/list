@@ -1,6 +1,27 @@
 <html>
     <head>
         <title>LIST</title>
+        <style>
+            .tooltip{
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+            }
+            .tooltip .tooltiptext{
+                visibility: hidden;
+                width: 200px;
+                height: 200px;
+                background-color: transparent;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 200;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+        </style>
     </head>
     <body style="background-image:url(background.jpg) ;">
         <h1 style="text-align: center; color: cornsilk;">Shopping list</h1>
@@ -8,7 +29,32 @@
         <!-- list  -->
 
         <ol>
-            
+            <li>
+                <div class="tooltip">
+                    <b>Fruits</b>
+                    <span class="tooltiptext"><img src="pexels-photo-1132047.jpeg" alt="idk"></span>
+                </div>
+                <ul>
+                    <li>
+                        <div class="tooltip">
+                            Mango
+                            <span class="tooltiptext"><img src="orignal-mango.png" alt="idk"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">
+                            Apple
+                            <span class="tooltiptext"><img src="firefox_2018-07-10_07-50-11.png" alt=""></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tooltip">
+                            Banana
+                            <span class="tooltiptext"><img src="Bananas-218094b-scaled.jpg" alt=""></span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
         </ol>
     </body>
 </html>
